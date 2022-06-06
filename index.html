@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind/output.css">
+    <title>Streaming Platform</title>
+</head>
+<body class="font-primary  ">
+    <!-- -----------------  FIRST PAGE  ------------->
+    
+    <div class="relative h-screen top-0 left-0 bg-no-repeat bg-center bg-cover overflow-hidden " style="background-image: url(./imgs/ambient.jpg)">
+        
+        <div class="wrapper h-full w-full absolute top-0 left-0 backdrop-blur-2xl bg-slate-800/20 "></div>
+        <div class="h-full w-full relative lg:flex">
+            <header class=" relative text-slate-800 bg-white left-0 h-full w-full md:w-11/12 md:h-full md:bg-white md:rounded-lg md:m-4 lg:w-3/4 lg:h-custom-95 lg:bg-white lg:rounded-lg lg:m-4 lg:grow">
+                <button aria-controls="nav" class="z-50 aspect-square w-8 bg-cover absolute top-4 right-4 no-repeat md:hidden" style="background-image: url(./imgs/menu.svg)"></button>
+                <!------------ Navigation ------------->
+                <nav data-visible="false"  aria-expanded="false"  class="z-10 w-4/5 md:w-full absolute right-0 h-full md:h-auto bg-red-500 border-slate-400 0 md:bg-transparent md:flex md:top-4 md:text-slate-800">
+                    <div class=" text-white/70 md:text-slate-700/70  font-bold font-secondary text-2xl text-center my-auto logo hidden md:block md:w-26 md:flex-grow-0 md:mx-6">
+                        Uptown
+                    </div>
+                    <span class="md:max-w-xxs flex-initial"></span>
+                    <ul class="text-slate-800 mb-12 md:mb-0 relative top-16 md:flex md:top-0 md:justify-center md:flex-start md:basis-1/2  md:m-auto md:flex-shrink-1">
+                        <li class="text-xl text-white px-4 border-b-2 border-red-200 my-4 md:my-0 py-2 mx-1 w-auto font-bold hover:bg-slate-200/30 hover:text-slate-600/80 md:border-none md:text-slate-800 md:active-sm"><a href="#" class="">Home</a></li>
+                        <li class="text-xl text-white px-4 border-b-2 border-red-200 my-4 md:my-0 py-2 mx-1 w-auto font-bold hover:bg-slate-200/30 hover:text-slate-600/80 md:border-none md:text-slate-800"><a href="#" class="">Artists</a></li>
+                        <li class="text-xl text-white px-4 border-b-2 border-red-200 my-4 md:my-0 py-2 mx-1 w-auto font-bold hover:bg-slate-200/30 hover:text-slate-600/80 md:border-none md:text-slate-800"><a href="#" class="">Albums</a></li>
+                        <li class="text-xl text-white px-4 border-b-2 border-red-200 my-4 md:my-0 py-2 mx-1 w-auto font-bold hover:bg-slate-200/30 hover:text-slate-600/80 md:border-none md:text-slate-800"><a href="#" class="">Playlists</a></li>
+                    </ul>                
+                </nav>
+                <!-- End of Navigation -->
+                <!-------------   First Page Content ---------------> 
+                <div class="text-box top-20 relative aspect-portrait">
+                    <div class="flex justify-between">
+                        <div class="basis-3/4 ">
+                            <h1 class="sm:text-3xl font-bold pl-4 py-6 text-xl  text-slate-900">Explore Albums</h1>
+                        </div>
+                        <div class=" grid grid-cols-[auto_1fr] place-items-center md:ml-8">
+                            <input type="search" class="border-2 border-slate-100 h-8 hidden md:block focus:outline-none disabled:text-slate-500 disabled:bg-slate-100 focus:ring-1 focus:ring-slate-400" placeholder=" Search">
+                            <span class="md:bg-slate-50 aspect-square w-8"><img src="./icons8-search.svg" class="w-full h-full "></span>
+                        </div>
+                    </div>
+                    <div class="w-full flex h-60">
+                        <div class="aspect-portraitsmall w-44 bg-white  drop-shadow-xl hover:drop-shadow-2xl hover:w-48 transition-all relative flex justify-center rounded-lg mx-4">
+                            <div class="absolute aspect-square w-11/12 mx-auto mt-4 ">
+                                <a href="#"><img class="w-full h-full rounded-xl" src="./imgs/somuchfun.png"></a> 
+                            </div>
+                            <div class="absolute bottom-0">
+                                <h3 class="text-lg text-center font-bold mt-2">So Much Fun</h3>
+                                <p class="text-md text-center text-slate-500 mt-0">Young Thug</p>
+                            </div>                           
+                        </div>
+                        <div class="aspect-portraitsmall w-44 bg-white  drop-shadow-xl hover:drop-shadow-2xl hover:w-48 transition-all relative flex justify-center rounded-lg mx-4">
+                            <div class="absolute aspect-square w-11/12 mx-auto mt-4 ">
+                                <a href="#"><img class="w-full h-full rounded-xl" src="./imgs/kanyealbum.png"></a> 
+                            </div>
+                            <div class="absolute bottom-0">
+                                <h3 class="text-lg text-center font-bold mt-2">Jesus is King</h3>
+                                <p class="text-md text-center text-slate-500 mt-0">Kanye West</p>
+                            </div>   
+                        </div>
+                        <div class="aspect-portraitsmall w-44 bg-white  drop-shadow-xl hover:drop-shadow-2xl hover:w-48 transition-all relative flex justify-center rounded-lg mx-4">
+                            <div class="absolute aspect-square w-11/12 mx-auto mt-4 ">
+                                <a href="#"><img class="w-full h-full rounded-xl" src="./imgs/uzieternalatake.jpg"></a> 
+                            </div>
+                            <div class="absolute bottom-0">
+                                <h3 class="text-lg text-center font-bold mt-2">Eternal Atake</h3>
+                                <p class="text-md text-center text-slate-500 mt-0">Lil Uzi Vert</p>
+                            </div>   
+                        </div>
+                        <div class="aspect-portraitsmall w-44 bg-white  drop-shadow-xl hover:drop-shadow-2xl hover:w-48 transition-all relative flex justify-center rounded-lg mx-4">
+                            <div class="absolute aspect-square w-11/12 mx-auto mt-4 ">
+                                <a href="#"><img class="w-full h-full rounded-xl" src="./imgs/wunna.jfif"></a> 
+                            </div>
+                            <div class="absolute bottom-0">
+                                <h3 class="text-lg text-center font-bold mt-2">Wunna</h3>
+                                <p class="text-md text-center text-slate-500 mt-0">Gunna</p>
+                            </div>
+                        </div>
+                        <div class="aspect-portraitsmall w-44 bg-white  drop-shadow-xl hover:drop-shadow-2xl hover:w-48 transition-all relative flex justify-center rounded-lg mx-4">
+                            <div class="absolute aspect-square w-11/12 mx-auto mt-4 ">
+                                <a href="#"><img class="w-full h-full rounded-xl" src="./imgs/fatherof4.jfif"></a> 
+                            </div>
+                            <div class="absolute bottom-0">
+                                <h3 class="text-lg text-center font-bold mt-2">Father of 4</h3>
+                                <p class="text-md text-center text-slate-500 mt-0">Offset</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </header>
+            <!-- Account Profile -->
+            <div class="profile hidden lg:block wrapper relative h-full w-1/5 top-0 left-0 lg:h-custom-95  lg:rounded-lg lg:m-4">
+                <div class="absolute  w-full m-auto h-full grid grid-rows-[1fr_auto_1fr] align-center gap-4">
+                    <div class="profile-pic flex items-center justify-center flex-col mx-2 border-b-2 border-white/20 ">
+                        <img src="./imgs/image-ramsesmiron.png" class="w-24  py-4 object-fill">
+                        <h3 class="text-white text-xl font-bold">Peter Quill</h3>
+                        <span class="text-white/60 font-secondary">5hrs 56 minutes streams</span>
+                    </div>
+                    <div class="border-b-2 mx-2 border-white/20">
+                        <h3 class="text-3xl text-white font-bold ">Favorite songs</h3>
+                        <ul class="py-4">
+                            <li class="text-white/95 text-xl font-secondary"><span class="text-white/70 text-lg mx-2">01</span>Soulmate </li>
+                            <span class="pl-6 text-white/40 ">Don Toliver</span>
+                            <li class="text-white/95 text-xl font-secondary"><span class="text-white/70 text-lg mx-2">02</span>Pushin P </li>
+                            <span class="pl-6 text-white/40 ">Gunna</span>
+                            <li class="text-white/95 text-xl font-secondary"><span class="text-white/70 text-lg mx-2">03</span>Praise God </li>
+                            <span class="pl-6 text-white/40 ">Kanye West</span>
+                            <li class="text-white/95 text-xl font-secondary"><span class="text-white/70 text-lg mx-2">04</span>XO Tour Lif3 </li>
+                            <span class="pl-6 text-white/40 ">Lil Uzi Vert</span>
+                        </ul>
+                    </div>
+                    <div class="bg-white/20 rounded-xl flex justify-center items-center flex-col">
+                        <h3 class="text-3xl text-white py-2 font-bold px-4">Analytics</h3>
+                        <p class="font-secondary text-white text-lg"><span class="text-white/60 text-xl px-2">2.3k</span>Plays this week</p>
+                        <p class="font-secondary text-white text-lg"><span class="text-white/60 text-xl px-2">10.6Gb</span>Used this month</p>
+                        <div class="mt-6 text-center">
+                            <span class=" text-white/60 border-2 border-white/20 px-4 py-2 hover:bg-white/90 hover:text-slate-700 transition-all">Cancel subscription</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         <!--Modal for showing account profile in mobile and tablets  -->
+        <div data-profile="false" class="modal bg-black/80 backdrop-blur-sm absolute top-0 right-0 h-full w-full z-50 flex justify-center items-center">
+            <div  class="aspect-square w-4/5 mx-auto absolute  bg-white rounded-lg">
+                <iframe src='https://my.spline.design/macbookprocopy-8d5407ddcfe1eac17412945f2347f933/' frameborder='0' width='100%' height='100%'></iframe>
+            </div>
+        </div>
+            
+        
+        
+    </div>
+   
+    
+    
+   
+   
+   
+
+
+
+    <!------------------- SECOND PAGE ----------------------->
+
+</body>
+<script src="script.js"></script>
+</body>
+</html>
